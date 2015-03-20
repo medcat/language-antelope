@@ -6,10 +6,22 @@
 "uuid": "2d7fd617-f324-4476-9380-f5108efdf88d",
 
 "patterns": [
+  { "include": "#comments" },
   { "include": "#firstSection" }
 ],
 
 "repository": {
+  "comments": {
+    "patterns": [
+      {
+        "match": "(#).*\\n",
+        "captures": {
+          "0": { "name": "punctuation.definition.comment.ace.ruby" }
+        }
+        "name": "comment.line.number-sign.ace.ruby"
+      }
+    ]
+  }
   "firstSection": {
     "patterns": [
       {
@@ -17,6 +29,7 @@
         "end": "a^",
         "name": "meta.section.third.ace.ruby",
         "patterns": [
+          { "include": "#comments" }
           { "include": "#secondSection" }
         ]
       },
@@ -60,6 +73,7 @@
         "end": "a^",
         "name": "meta.section.last.ace.ruby",
         "patterns": [
+          { "include": "#comments" }
           { "include": "source.ruby" }
         ]
       },

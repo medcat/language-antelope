@@ -1,6 +1,6 @@
 {
   "name": "language-antelope",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The Antelope Ace file format.",
   "repository": "https://github.com/medcat/language-antelope",
   "license": "MIT",
